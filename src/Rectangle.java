@@ -1,2 +1,25 @@
-package PACKAGE_NAME;public class Rectangle {
+// Rectangle class definition
+public class Rectangle {
+
+    // instance variables
+    private double length;
+    private double width;
+
+    // constructor method for creating Rectangle objects;
+    // instance variables are set here using the values passed as arguments
+    public Rectangle(double len, double wid) {
+        length = len;
+        width = wid;
+    }
+
+    // method that calculates and prints area
+    public void printArea() {
+        double area = length * width;
+        System.out.println("My area is " + area);
+    }
+
+    public void printPerimeter() {
+        double perimeter = 2 * (length + width);
+        System.out.println("My perimeter is " + perimeter);
+    }
 }
